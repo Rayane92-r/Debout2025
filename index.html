@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debout dans la tête — Accès</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="home">
+
+    <h1 class="fade-title">DEBOUT DANS LA TÊTE</h1>
+
+    <div class="home-box fade-box">
+        <p class="home-quote">« Le fauteuil n’est qu’un siège, ma volonté fait le chemin. »</p>
+        <p class="home-author">— Rayane</p>
+
+        <input type="password" id="password" placeholder="Mot de passe" class="input-pass">
+        <button class="btn-home" onclick="login()">🔓 Entrer</button>
+
+        <p id="error" class="error-msg"></p>
+    </div>
+
+    <script>
+        function login() {
+            const pass = document.getElementById("password").value;
+            if (pass === "debout2025") {
+                localStorage.setItem("access", "ok");
+                window.location.href = "reading.html";
+            } else {
+                document.getElementById("error").textContent = "❌ Mot de passe incorrect";
+            }
+        }
+    </script>
+
+</body>
+</html>

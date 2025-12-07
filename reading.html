@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture — Debout dans la tête</title>
+
+    <!-- Google Fonts Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    
+        
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="reading">
+
+<header class="top-bar">
+    <button onclick="history.back()" class="back-btn">← Retour</button>
+    <div id="progress-text" class="progress-text"></div>
+</header>
+
+<div class="progress-bar">
+    <div id="progress-fill"></div>
+</div>
+
+<div class="reader-container fade">
+    <h2 id="chapter-title"></h2>
+    <div id="chapter-content" class="chapter-content"></div>
+
+    <div class="button-nav">
+        <button id="prev" class="btn-nav">⭠ Précédent</button>
+        <button id="next" class="btn-nav">Suivant ⭢</button>
+    </div>
+</div>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
